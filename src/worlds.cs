@@ -561,7 +561,7 @@ namespace Leopotam.EcsLite {
         }
     }
 
-#if (DEBUG && !LEOECSLITE_NO_SANITIZE_CHECKS) || LEOECSLITE_WORLD_EVENTS
+#if DEBUG || LEOECSLITE_WORLD_EVENTS
     public interface IEcsWorldEventListener {
         void OnEntityCreated (int entity);
         void OnEntityChanged (int entity);
